@@ -3,7 +3,7 @@
 
 ## Definition
 
-Users crud project using ruby with Sqlite3 relational database 
+Users crud project using ruby with Postgres relational database 
 
   
 
@@ -13,7 +13,7 @@ Users crud project using ruby with Sqlite3 relational database
 
 **Framework:** Rails, with the following libraries:
 
-- Sqlite3
+- Postgres
 
   
 
