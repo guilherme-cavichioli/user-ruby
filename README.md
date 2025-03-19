@@ -1,24 +1,64 @@
-# README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# User
 
-Things you may want to cover:
+## Definition
 
-* Ruby version
+Users crud project using ruby with Sqlite3 relational database 
 
-* System dependencies
+  
 
-* Configuration
+**Programming language:** Ruby
 
-* Database creation
+  
 
-* Database initialization
+**Framework:** Rails, with the following libraries:
 
-* How to run the test suite
+- Sqlite3
 
-* Services (job queues, cache servers, search engines, etc.)
+  
 
-* Deployment instructions
+## Quick Start
 
-* ...
+  
+
+To start the project you will need to install the following dependencies:
+
+https://docs.docker.com/engine/install/
+
+https://docs.docker.com/compose/install/
+
+  
+
+Clone using ssh: `git clone git@github.com:guilherme-cavichioli/user-ruby.git`
+
+Clone using https: `git clone https://github.com/guilherme-cavichioli/user-ruby.git`
+
+  
+  
+
+Alter installation, run the following commands at the project root:
+
+**docker compose up**
+
+  
+
+**Using application**
+
+  
+
+Examples of the endpoints requests
+
+ - POST
+`curl --location 'http://localhost:3000/v1/users' \
+--header 'Content-Type: application/json' \
+--data-raw '{
+"name": "John Doeeeee",
+"email": "john@example.com",
+"document": "123456789"
+}'`
+ - GET ALL
+ `curl --location 'http://localhost:3000/v1/users'`
+ - GET BY ID
+`curl --location 'http://localhost:3000/v1/users/1`
+ - DELETE BY ID
+`curl --location --request DELETE 'http://localhost:3000/v1/users/1'`
